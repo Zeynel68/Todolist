@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="w-full p-4">
+        <h1 class="text-2xl font-bold mb-4">Todo List</h1>
+        <div class="mt-4">
+          <input id="todo-input" class="border p-2 w-full" type="text" placeholder="New todo...">
+          <button id="add-todo" class="mt-2 w-full bg-blue-500 text-white p-2 rounded">Add Todo</button>
+          <button id="clear-todos" class="mt-2 w-full bg-red-500 text-white p-2 rounded">Clear All</button>
+        </div>
+        <div class="mt-4">
+          <ul id="todo-list" class="list-disc pl-5">
+            <!-- List items will be added here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
